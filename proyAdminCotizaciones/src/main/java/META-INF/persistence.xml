@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+
+    <persistence-unit name="JPA-Web" transaction-type="RESOURCE_LOCAL">
+        <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+        
+        <class>com.cotiline.seguridad.bean.BeanCargo</class>
+        <class>com.cotiline.seguridad.bean.BeanUsuario</class> 
+        <class>com.cotiline.seguridad.bean.BeanMenu</class>
+        <class>com.cotiline.seguridad.bean.BeanOpciones</class>
+        <class>com.cotiline.seguridad.bean.BeanUsuario</class>
+        
+        <class>com.cotiline.cotizar.mant.bean.BeanMarca</class>
+        <class>com.cotiline.cotizar.mant.bean.BeanUMedida</class>
+        <class>com.cotiline.cotizar.mant.bean.BeanProducto</class>
+        <class>com.cotiline.cotizar.mant.bean.BeanCliente</class>
+        <class>com.cotiline.cotizar.mant.bean.BeanProveedor</class>
+        <class>com.cotiline.cotizar.mant.bean.BeanUbigeo</class> 
+        
+        <class>com.cotiline.cotizar.transaccion.bean.BeanTranProductoMarca</class> 
+        <class>com.cotiline.cotizar.transaccion.bean.BeanTranProductoMarcaUmed</class> 
+        <class>com.cotiline.cotizar.transaccion.bean.BeanTranProductoPrecio</class> 
+        
+	    <properties>
+		    <property name="eclipselink.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+		    <property name="eclipselink.jdbc.url" value="jdbc:mysql://localhost:3306/bd_cotizacion"/>
+		    <property name="eclipselink.jdbc.user" value="root"/>
+		    <property name="eclipselink.jdbc.password" value="root"/>
+		    <property name="eclipselink.logging.level" value="FINE"/>     
+		</properties>        
+        
+    </persistence-unit>
+    	        
+</persistence>
