@@ -1,5 +1,7 @@
 package com.cotiline.dao;
 
+import com.cotiline.cotizar.cotizacion.dao.CotizacionDAO;
+import com.cotiline.cotizar.cotizacion.dao.DetalleCotizacionDAO;
 import com.cotiline.cotizar.mant.dao.ClienteDAO;
 import com.cotiline.cotizar.mant.dao.MarcaDAO;
 import com.cotiline.cotizar.mant.dao.ProductoDAO;
@@ -75,12 +77,21 @@ public class MySqlDAOFactory extends DAOFactory {
 		// TODO Auto-generated method stub
 		return null;
 	}
-
-	/* (non-Javadoc)
-	 * @see com.cotiline.dao.DAOFactory#getUMedidaDAO()
-	 */
+ 
 	@Override
 	public UMedidaDAO getUMedidaDAO() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+ 
+	@Override
+	public CotizacionDAO getCotizacionDAO() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+ 
+	@Override
+	public DetalleCotizacionDAO getDetalleCotizacionDAO() {
 		// TODO Auto-generated method stub
 		return null;
 	}

@@ -3,6 +3,10 @@ package com.cotiline.dao;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
+import com.cotiline.cotizar.cotizacion.dao.CotizacionDAO;
+import com.cotiline.cotizar.cotizacion.dao.CotizacionDAOImpl;
+import com.cotiline.cotizar.cotizacion.dao.DetalleCotizacionDAO;
+import com.cotiline.cotizar.cotizacion.dao.DetalleCotizacionDAOImpl;
 import com.cotiline.cotizar.mant.dao.ClienteDAO;
 import com.cotiline.cotizar.mant.dao.ClienteDAOImpl;
 import com.cotiline.cotizar.mant.dao.MarcaDAO;
@@ -109,6 +113,20 @@ public class JPADAOFactory extends DAOFactory {
 		TranProductoPrecioDAOImpl cd = new TranProductoPrecioDAOImpl();
 		cd.setEntityManagerFactory(emf);
 		return (TranProductoPrecioDAO)cd;
+	}
+ 
+	@Override
+	public CotizacionDAO getCotizacionDAO() {
+		CotizacionDAOImpl cd = new CotizacionDAOImpl();
+		cd.setEntityManagerFactory(emf);
+		return (CotizacionDAO)cd;
+	}
+ 
+	@Override
+	public DetalleCotizacionDAO getDetalleCotizacionDAO() {
+		DetalleCotizacionDAOImpl cd = new DetalleCotizacionDAOImpl();
+		cd.setEntityManagerFactory(emf);
+		return (DetalleCotizacionDAO)cd;
 	}
  
 	

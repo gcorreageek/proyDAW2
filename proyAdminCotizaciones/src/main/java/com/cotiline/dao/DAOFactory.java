@@ -1,5 +1,7 @@
 package com.cotiline.dao;
 
+import com.cotiline.cotizar.cotizacion.dao.CotizacionDAO;
+import com.cotiline.cotizar.cotizacion.dao.DetalleCotizacionDAO;
 import com.cotiline.cotizar.mant.dao.ClienteDAO;
 import com.cotiline.cotizar.mant.dao.MarcaDAO;
 import com.cotiline.cotizar.mant.dao.ProductoDAO;
@@ -35,7 +37,9 @@ public abstract class DAOFactory {
     public abstract ClienteDAO getClienteDAO();
     public abstract TranProductoMarcaDAO getTranProductoMarcaDAO();
     public abstract TranProductoMarcaUmedDAO getTranProductoMarcaUmedDAO();
-    public abstract TranProductoPrecioDAO getTranProductoPrecioDAO();
+    public abstract TranProductoPrecioDAO getTranProductoPrecioDAO(); 
+    public abstract CotizacionDAO getCotizacionDAO();
+    public abstract DetalleCotizacionDAO getDetalleCotizacionDAO();
     
     
     public static DAOFactory getDAOFactory(int whichFactory) {

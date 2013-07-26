@@ -21,7 +21,8 @@ import com.cotiline.seguridad.bean.BeanUsuario;
  * gcorreageek@gmail.com  
  */
 @ManagedBean
-//
+//sessionscope los atributos declarados se guardan en session
+//requestscope los atributos se envian no mas
 public class PruebaAction {
 
 	BeanUsuario beanUsuario;
