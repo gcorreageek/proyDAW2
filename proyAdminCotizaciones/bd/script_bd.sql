@@ -1,9 +1,9 @@
 CREATE DATABASE  IF NOT EXISTS `bd_cotizacion` /*!40100 DEFAULT CHARACTER SET latin1 */;
 USE `bd_cotizacion`;
 -- MySQL dump 10.13  Distrib 5.5.16, for Win32 (x86)
---
-
---  jjjj
+-- gustavo
+-- gustavimoo1
+-- gustavimoo2
 -- Host: 127.0.0.1    Database: bd_cotizacion
 -- ------------------------------------------------------
 -- Server version	5.5.9
