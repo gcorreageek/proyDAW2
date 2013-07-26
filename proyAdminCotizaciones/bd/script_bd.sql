@@ -3,6 +3,10 @@ USE `bd_cotizacion`;
 -- MySQL dump 10.13  Distrib 5.5.16, for Win32 (x86)
 --
 
+-- probandoooo
+
+
+
 --  jjjj
 -- Host: 127.0.0.1    Database: bd_cotizacion
 -- ------------------------------------------------------
